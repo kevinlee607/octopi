@@ -10,7 +10,7 @@ type qc_in_type struct {
 	memory int
 }
 
-type instance struct {
+type run_instance struct {
 	inst_type, action, login_mod             string
 	resource                                 qc_in_type
 	inst_name, login_keypair, login_password string
@@ -19,6 +19,14 @@ type instance struct {
 	vxnet, image_id, security_group          string
 }
 
-func (qc_instance *instance, qc_signature string) Run_instance() {
-	
+type des_instance struct {
+	image_id, instacne_id, status string
+}
+
+func Run_instance(qc_instance *run_instance, qc_signature string) string {
+
+}
+
+func (inst_id string) Des_instance() string {
+
 }
